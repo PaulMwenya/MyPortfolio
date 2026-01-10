@@ -112,12 +112,41 @@ export default function Hero() {
         </div>{" "}
       </div>
 
-      <div className="overflow-hidden w-1/2 mt-12 mx-auto">
-        <div className="flex animate-marquee gap-6 whitespace-nowrap">
+      {/* Tech stack section below grid */}
+      <div className="w-full mt-12 relative z-10 flex flex-col items-center gap-4">
+        {/* Heading above marquee */}
+        <h2 className="bg-linear-to-r from-[#a7fdbc] via-[#159baf] to-[#390eaf] bg-clip-text text-transparent text-2xl font-bold">
+          My Skills
+        </h2>
+
+        {/* Marquee */}
+        <div className="overflow-hidden w-full hidden md:block pb-6">
+          <div className="flex animate-marquee gap-6 whitespace-nowrap">
+            {techStack.map((tech, index) => (
+              <span
+                key={index}
+                className="inline-block text-white/60 px-4 py-2 rounded-full hover:text-blue-200"
+              >
+                {tech}
+              </span>
+            ))}
+            {/* duplicate for seamless scrolling */}
+            {techStack.map((tech, index) => (
+              <span
+                key={`dup-${index}`}
+                className="inline-block text-white/60 px-4 py-2 rounded-full hover:text-blue-200"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+        {/* Mobile: swipeable scroll */}
+        <div className="flex md:hidden gap-4 overflow-x-auto py-2 scrollbar-hide w-full px-4">
           {techStack.map((tech, index) => (
             <span
               key={index}
-              className="inline-block text-white/60 px-4 py-2 rounded-full hover:text-blue-200"
+              className="inline-block text-white/60 px-4 py-2 rounded-full hover:text-blue-200 flex-shrink-0"
             >
               {tech}
             </span>
