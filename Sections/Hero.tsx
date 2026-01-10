@@ -23,6 +23,27 @@ export default function Hero() {
       id: 3,
     },
   ];
+  const techStack = [
+    "JavaScript",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "SQL",
+    "Supabase",
+    "Clerk Auth",
+    "Git",
+    "GitHub",
+    "Figma",
+    "Vercel",
+    "Netlify",
+  ];
+
   return (
     <section className="relative min-h-screen overflow-hidden pt-16">
       {/*background image */}
@@ -80,7 +101,7 @@ export default function Hero() {
           </div>
         </div>
         {/* image div*/}
-        <div className="relative w-auto h-100 md:h-full p-4">
+        <div className="relative w-auto h-100 md:h-full p-4 max-w-2xl">
           {" "}
           <Image
             src="/PMR.jpg"
@@ -89,6 +110,19 @@ export default function Hero() {
             className="object-cover rounded-2xl"
           />
         </div>{" "}
+      </div>
+
+      <div className="overflow-hidden w-1/2 mt-12 mx-auto">
+        <div className="flex animate-marquee gap-6 whitespace-nowrap">
+          {techStack.map((tech, index) => (
+            <span
+              key={index}
+              className="inline-block text-white/60 px-4 py-2 rounded-full hover:text-blue-200"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );
