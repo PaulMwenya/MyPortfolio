@@ -14,7 +14,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: "About", href: "#about" },
+    { label: "About", href: "#About" },
     { label: "Projects", href: "#projects" },
     { label: "Skills", href: "#skills" },
   ];
@@ -28,7 +28,9 @@ export default function Header() {
         >
           PMwenya
         </a>
-        <p className={`${dancingScript.className} sm:hidden`}>PM</p>
+        <a href="#" className={`${dancingScript.className} sm:hidden`}>
+          PM
+        </a>
       </div>
 
       {/* Mobile nav */}

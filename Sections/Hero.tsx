@@ -19,7 +19,7 @@ export default function Hero() {
     },
     {
       icon: Linkedin,
-      href: "https://www.facebook.com/raemond.fwalis",
+      href: "https://www.linkedin.com/in/paul-mwenya-685447393?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       id: 3,
     },
   ];

@@ -31,7 +31,7 @@ export default function About() {
   ];
 
   return (
-    <section id="#About" className="relative overflow-hidden py-12">
+    <section id="About" className="relative overflow-hidden py-12">
       {/*background image */}
       <Image
         src="/tech.png"
@@ -72,7 +72,7 @@ export default function About() {
         <div className="flex flex-col gap-4 p-6 space-y-4 items-center">
           <br />
           {highlights.map((highlight) => (
-            <div className="flex flex-col">
+            <div key={highlight.title} className="flex flex-col">
               <div className="flex items-center space-x-2">
                 <highlight.icon className="text-blue-500" />
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight text-green-500/40">
