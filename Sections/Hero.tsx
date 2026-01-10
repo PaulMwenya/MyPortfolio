@@ -45,7 +45,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen overflow-hidden pt-16">
+    <section className="relative overflow-hidden pt-16">
       {/*background image */}
       <Image
         src="/hero.jpg"
@@ -80,7 +80,7 @@ export default function Hero() {
             <div className="bg-linear-to-r from-amber-500 via-blue-600 to-emerald-500 rounded-lg p-0.5">
               <Button
                 variant={"ghost"}
-                className="w-auto m-auto outline-amber-300 bg-black rounded-lg"
+                className="w-auto m-auto bg-black rounded-lg hover:bg-white/60"
               >
                 <Download className="animate animate-ping text-green-500" />
                 Resume{" "}
@@ -142,7 +142,7 @@ export default function Hero() {
           </div>
         </div>
         {/* Mobile: swipeable scroll */}
-        <div className="flex md:hidden gap-4 overflow-x-auto py-2 scrollbar-hide w-full px-4">
+        <div className="flex md:hidden gap-4 overflow-x-auto py-2 scrollbar-hide w-full px-4 pb-6">
           {techStack.map((tech, index) => (
             <span
               key={index}
