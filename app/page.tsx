@@ -4,6 +4,7 @@ import Projects from "@/Sections/Projects";
 import Skills from "@/Sections/Skills";
 import About from "@/Sections/About";
 import Hero from "@/Sections/Hero";
+import Footer from "@/Sections/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <Projects />
         <Skills />
+        <Footer />
       </main>
     </div>
   );
