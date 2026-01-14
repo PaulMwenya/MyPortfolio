@@ -7,16 +7,8 @@ import { ArrowRight, Download, Facebook, Github, Linkedin } from "lucide-react";
 
 export default function Hero() {
   const socialLinks = [
-    {
-      icon: Facebook,
-      href: "https://www.facebook.com/mwenyapaul2/",
-      id: 1,
-    },
-    {
-      icon: Github,
-      href: "https://github.com/PaulMwenya",
-      id: 2,
-    },
+    { icon: Facebook, href: "https://www.facebook.com/mwenyapaul2/", id: 1 },
+    { icon: Github, href: "https://github.com/PaulMwenya", id: 2 },
     {
       icon: Linkedin,
       href: "https://www.linkedin.com/in/paul-mwenya-685447393",
@@ -119,8 +111,11 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* tech stack */}
-      <div className="relative z-10 mt-16 flex flex-col items-center gap-4">
+      {/* tech stack / skills */}
+      <div
+        id="skills"
+        className="scroll-mt-16 relative z-10 mt-16 flex flex-col items-center gap-4"
+      >
         <h2 className="text-xl font-semibold bg-linear-to-r from-[#a7fdbc] via-[#159baf] to-[#390eaf] bg-clip-text text-transparent">
           Tech Stack
         </h2>

@@ -66,7 +66,7 @@ export default function Header() {
         ))}
       </nav>
 
-      <div className="flex items-center gap-2">
+      <div className="flex gap-2">
         <Button
           onClick={() => setIsOpen((prev) => !prev)}
           className="cursor-pointer md:hidden"
@@ -74,7 +74,12 @@ export default function Header() {
           {" "}
           {!isOpen ? <Menu size={24} /> : <X size={24} />}
         </Button>
+
         <Button
+          onClick={() => {
+            const el = document.getElementById("contact");
+            if (el) el.scrollIntoView({ behavior: "smooth" });
+          }}
           className="hidden md:block hover:bg-linear-to-r from-[#a7fdbc] via-[#159baf] to-[#390eaf]"
           size="sm"
           variant="default"
