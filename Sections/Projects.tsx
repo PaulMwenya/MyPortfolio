@@ -20,7 +20,7 @@ export default function Projects() {
         "A personal portfolio built to showcase my skills, projects I’ve built and everything about me.",
       image: "/portfolio.png",
       tech: "Next.js, shadcn/ui",
-      link: "https://mwenyapaul.netlify.app/",
+      link: "https://paulmwenya.vercel.app/",
       github: "https://github.com/PaulMwenya",
     },
   ];

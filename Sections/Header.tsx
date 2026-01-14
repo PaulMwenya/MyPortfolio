@@ -49,7 +49,18 @@ export default function Header() {
               {section.label}
             </a>
           ))}
-          <Button className="bg-blue-700">Contact me</Button>
+          <Button
+            className="bg-blue-700 mt-4"
+            onClick={() => {
+              const contactSection = document.getElementById("contact");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+                setIsOpen(false); // close mobile menu
+              }
+            }}
+          >
+            Contact me
+          </Button>
         </nav>
       )}
 
