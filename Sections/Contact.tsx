@@ -104,7 +104,7 @@ export default function Contact() {
                 href="mailto:mwenyapaul@gmail.com"
                 className="hover:text-blue-400 transition-colors"
               >
-                mwenyapaul@gmail.com
+                mwenyapaul2@gmail.com
               </a>
             </div>
 
