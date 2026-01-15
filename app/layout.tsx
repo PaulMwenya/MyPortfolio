@@ -19,6 +19,22 @@ export const metadata: Metadata = {
   verification: {
     google: "88CGk6CKPL99wo2WtrAYj2JXlr9nvXKFba2lg9SaI4c",
   },
+  openGraph: {
+    title: "Paul Mwenya | Software Engineer",
+    description:
+      "Software Engineer specializing in modern web development using React, Next.js, and Tailwind CSS.",
+    url: "https://mwenyapaul.vercel.app",
+    siteName: "Paul Mwenya Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Paul Mwenya Portfolio",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
