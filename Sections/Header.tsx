@@ -44,7 +44,7 @@ export default function Header() {
               key={section.label}
               href={section.href}
               onClick={() => setIsOpen(false)}
-              className="py-2 text-lg hover:text-green-600"
+              className="py-2 text-lg border-b-2 border-transparent hover:border-green-600 hover:text-green-600 transition-all duration-200"
             >
               {section.label}
             </a>
@@ -70,7 +70,7 @@ export default function Header() {
           <a
             key={section.label}
             href={section.href}
-            className="hover:text-blue-200"
+            className=" py-2 text-lg border-b-2 border-transparent hover:border-blue-200 hover:text-blue-200 transition-all duration-200"
           >
             {section.label}
           </a>
