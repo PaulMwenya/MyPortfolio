@@ -75,7 +75,7 @@ export default function Hero() {
             <a href="/Paul_Mwenya_Resume .pdf" download>
               <Button
                 variant="outline"
-                className="gap-2 border-white/20 hover:bg-white/10 text-primary"
+                className="gap-2 border-white/20 hover:bg-white/80 text-primary"
               >
                 <Download size={18} />
                 Resume
